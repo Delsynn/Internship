@@ -1,0 +1,34 @@
+#!/usr/bin/bash
+
+# Check if the necessary arguments were provided
+if [ $# -ne 5 ]; then
+        echo "Usage: $0 <starting_sequence_number> <number_of_sets> <output_directory> <date> <file_name_suffix>"
+        exit 1
+fi
+
+# Extract the arguments into variables
+start_seq=$1
+num_sets=$2
+output_dir=$3
+date=$4
+suffix=$5
+
+
+# Create the output directory if it doesn't exist
+if [ ! -d "$output_dir" ]; then
+        mkdir -p "$output_dir"
+fi
+
+
+# Loop through the number of sets and create the files
+for (( i=0; i<num_sets; i++ ))
+do
+        file_name_FO="FO.NOTI.999999.$date.$start_seq.T.1.1.$suffix"
+        file_name_FS="FS.NOTI.999999.$date.$start_seq.T.1.1.$suffix"
+        file_name_GO="GO.NOTI.999999.$date.$start_seq.T.1.1.$suffix"
+        touch "${output_dir}/${file_name_FO}"
+        touch "${output_dir}/${file_name_FS}"
+        touch "${output_dir}/${file_name_GO}"
+        cat /home/integratie/performantietest/template.xml >> "${output_dir}/$file_name_FO"
+        start_seq=$((start_seq + 1))
+done

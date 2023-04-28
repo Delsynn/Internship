@@ -1,0 +1,12 @@
+Security bij Acerta
+--------------------
+
+Zoals voordien vermeld draait Acerta dus Rhel 7 op hun linux machines.
+Linux is natively al erg secure omwille van verschillende redenen (priviliges, namespaces, enz..)
+Zij gebruiken echter ook Defender voor Linux op deze machines, dit wordt automatisch geïnstalleerd bij het provisionen van deze machines.
+Erg veel vulnerabilities worden al opgelost door het gebruik van containers.
+Het feit dat je meerdere replicas van je pods kan maken geeft de mogelijkheid om aan load-balancing te doen bijvoorbeeld.
+Dit kan al veel helpen bij verschillende soorten van attacks waar de opzet is om de systemen te overladen.
+Wanneer een pod down gaat wordt er ook automatisch een nieuwe opgestart.
+Het gebruiken van container images kan ook toelaten om steeds de meest recente versie van de applicaties te gebruiken.
+Dit gaat dan vooral over externe applicaties die zij gebruiken voor de security (bijvoorbeeld Defender for Linux).

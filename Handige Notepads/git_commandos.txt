@@ -1,0 +1,13 @@
+git pull
+git checkout -b main
+git push --set-upstream origin main
+git fetch --prune
+git remote add github 'url'
+git fetch github main
+git merge github/main --allow-unrelated-histories
+git push github main
+git push --prune github +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
+
+git remote remove origin
+git remote rename github origin
+git push --set-upstream origin main

@@ -1,0 +1,29 @@
+Gebruikte tools/platforms gedurende werkplekleren :
+
+Git : Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. 
+Bitbucket : Bitbucket Cloud is a Git based code hosting and collaboration tool, built for teams. 
+Github : GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. 
+Github Actions : GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline.
+IntelliJ IDE : IntelliJ IDEA is an integrated development environment written in Java for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages.
+Rancher : Rancher is a complete software stack for teams adopting containers. It addresses the operational and security challenges of managing multiple Kubernetes clusters across any infrastructure, while providing DevOps teams with integrated tools for running containerized workloads.
+Confluence : Confluence is a web-based corporate wiki developed by Australian software company Atlassian.
+Maven : Maven is a build automation tool used primarily for Java projects.
+
+
+Aangeleerde termen en concepten :
+
+DVCS : A distributed version control system (DVCS) brings a local copy of the complete repository to every team member's computer, so they can commit, branch, and merge locally. The server doesn't have to store a physical file for each branch — it just needs the differences between each commit.
+Git commands
+MFT : Managed file transfer refers to a technology that provides the secure transfer of data in an efficient and reliable manner. MFT software is marketed to companies as a more secure alternative to using insecure protocols like FTP and HTTP to transfer files.
+DevOps : DevOps is a methodology in the software development and IT industry. Used as a set of practices and tools, DevOps integrates and automates the work of software development and IT operations as a means for improving and shortening the systems development life cycle.
+Terraform : Terraform is an open-source infrastructure-as-code software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language, or optionally JSON.
+Infrastructure as Code : Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through code instead of through manual processes. With IaC, configuration files are created that contain your infrastructure specifications, which makes it easier to edit and distribute configurations.
+
+
+
+Tools/platforms gebruikt door de medewerkers van B2B :
+
+Jira : Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.
+Omnitracker : Omnitracker is a proprietary business process platform developed by Omninet GmbH in Germany. Omnitracker is developed as modular software for medium and large companies. It is used to track, control and evaluate relevant business processes.
+PowerBI : Power BI is an interactive data visualization software product developed by Microsoft with a primary focus on business intelligence. It is part of the Microsoft Power Platform.
+Informatica Power Center : Informatica PowerCenter products are used extensively for ETL operations, data quality, data masking, data replication, data virtualization, and master data management services. Informatica works on service-oriented architecture.
