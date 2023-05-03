@@ -1,0 +1,45 @@
+Ik werkte voornamelijk aan twee hoofdopdrachten bij Acerta en kreeg hierbij veel autonomie :
+
+Opdracht 1 : Migratie van hun te archiveren repositories van hun applicaties van Bitbucket naar Github.
+
+
+
+
+
+Beschrijving :
+Acerta heeft verschillende applicaties die zij zelf geschreven hebben, sommige nog in productie en andere die niet langer gebruikt worden maar die zij graag wensen bij te houden voor de toekomst.Mij werd gevraagd om de applicaties die ze niet langer gebruiken maar dus wel wensen bij te houden te migreren van Bitbucket naar Github. Dit zijn distributed version control systems, deze platforms bevatten enorm veel functionaliteit maar in essentie laten deze toe dat meerdere mensen aan een project/applicatie kunnen werken samen.Dit werkt met een branch systeem waarbij men extra vertakkingen (branches) van de hoofdbranch kunnen clonen, dit geeft hen de mogelijkheid om met dezelfde code en files te werken als de hoofdbranch zonder de hoofdbranch in gevaar te brengen indien zij iets fout of iets kapot maken. Hierdoor kan men aan nieuwe features werken voor de hoofdbranch en pas indien alles getest is en werkt kan dan de zij-branch ge-merged worden met de hoofdbranch.
+In ieder geval wilden zij dus dat ik mij bezig hield met de migratie van hun te archiveren repositories, dit was niet al te riskant en hier kon weinig mee foutgaan.
+
+
+
+
+
+Aanpak : 
+
+Zij wilden dat ik mij eerst familiar maakte met deze platforms en het gebruik van Git commando's dus hieraan werden de eerste twee dagen gespendeerd, experimentatie met de git commando's in een IDE genaamd IntelliJ. Dan hielden ik en mijn begeleider een teams meeting en gingen wij samen door de migratie van een eerste repository.
+
+Uitvoering :
+
+Na familiarisatie met Git, Bitbucket, Github en samen een migratie te doen met mijn begeleider werd ik los gelaten op een lijst van repositories die moesten gemigreerd worden van Bitbucket naar Github en dan geärchiveerd op Github. Hierbij had ik een stappenplan van de commando's dat ik kon terugvinden op de Confluence van Acerta en indien ik vragen had kon ik deze steeds stellen aan mijn begeleider.
+
+Het enige echte probleem dat wij tegenkwamen was dat alle migraties van mijn account gebeurde en het B2B departement geen admin rechten had hierdoor.Eerst konden wij deze niet instellen maar na enig onderzoek bleek dat wij om deze rechten in te stellen de repositories eerst moeten onarchiveren. Dit moest ik dan doen voor alle repositories die ik al had afgewerkt om ze daarna terug te archiveren.Voor de verdere repositories gaf ik dan de rechten voor de archivatie en dit was het enige echte probleem waar we op stuiten.
+
+Wij waren ook even begonnen aan de migratie van de applicaties die nog in productie staan maar hier kwamen enorm veel dependancy problemen naar boven en hier moesten zij eerst verder naar kijken.Deze applicaties heb ik dus helaas niet kunnen verder migreren voor hen.
+
+Opdracht 2 : Schrijven van een bash script om een loadtest uit te voeren op hun clusters in de acceptatie omgeving.
+
+Beschrijving :
+
+Veel van hun applicaties draaien in Kubernetes clusters, er zijn clusters voor hun test/dev, acceptatie en productie omgeving.
+
+Mij werd gevraagd om een loadtest script te schrijven voor hun verzendsysteem applicatie dat wij dan gingen gebruiken op de acceptatie omgeving om te zien hoeveel lading dit genereerde op CPU en geheugen.  Dit was een simpel script dat een meegegeven hoeveelheid sets van 3 bestanden moest genereren. Deze bestanden moesten voldoen aan een exacte syntax anders werden deze niet opgepikt door de applicatie die wij wilden testen. Het verzendsysteem maakt deel uit van hun MFT tussen Acerta en de overheid en de overheid vereist een zeer specifieke benaming van deze bestanden. De meegegeven parameters waren een startindex (die ook gebruikt werd in de naam van de bestanden), het aantal sets van 3 die moesten gegenereerd worden, de directory waar de bestanden moesten gegenereerd worden, de datum en de suffix van het bestand (bv. DIMN).
+
+Aanpak :
+
+Ik maakte gebruik van een combinatie van online guides en chatgpt om mij terug familiar te maken met bash scripting, dit was al geleden van de vorige examens en toen was ik er ook niet echt bedreven meer in. Dan teste ik men code stapsgewijs om zo te zien of ik het correcte resultaat kreeg.
+
+Uitvoering :
+
+Eenmaal het basis script was geschreven hebben wij dit eerst getest op te testomgeving van Acerta, dit om te zien of de bestanden werden opgepikt door hun verzendsysteem op deze cluster. Uit deze testen bleek dat de benaming van de bestanden niet volledig volgens de syntax bleek te zijn en de bestanden werden niet opgepikt door het verzendsysteem, er moesten dus nog enkele aanpassingen aan het script gebeuren. Wanneer deze problemen van de baan waren werkte het script zoals verwacht en konden wij aan de ladingstesten beginnen op de acceptatieomgeving. Hiervoor moest de applicatie eerst naar beneden gehaald worden en voerde ik het script uit van een andere pod in dezelfde cluster om zo de bestanden aan te maken. Hierna werd de applicatie terug opgestart en wachten wij om te zien of de bestanden werden opgepikt en hoeveel lading dit genereerde op het systeem. Dit met verschillende hoeveelheden van bestanden, eerst 100, dan 250, 500 en uiteindelijk 1000. De lading viel binnen de perken en de dit werd dan doorgegeven aan de correcte personen.
+
+Deze test werd dan nogmaal herhaald op een ander deel van het verzendsysteem en hiervoor moest ik het script wat aanpassen want deze bestanden moesten dan een iets andere syntax hebben. Verder was de test op de 2de applicatie volledig hetzelfde.
