@@ -11,5 +11,9 @@ Interesting links I found during the internship:
 Network Chuck_Hacker's Roadmap: https://www.youtube.com/watch?v=uTAaFExLgwQ
 Network Chuck_Hack_Home_Network: https://www.youtube.com/watch?v=80vIin4xGp8
 
+Webscraping for a future project:
+
+https://oxylabs.io/blog/pagination-in-web-scraping
+https://www.youtube.com/watch?v=XVv6mJpFOb0
 
 
