@@ -1,0 +1,8 @@
+{
+    "extends": ["config:base"],
+    "dockerfile": {
+      "enabled": true
+    },
+    "schedule": ["* 14 * * *"],
+    "timezone": "Europe/Brussels"
+  }
