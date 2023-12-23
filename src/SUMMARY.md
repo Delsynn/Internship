@@ -5,7 +5,7 @@
 # User Guide
 
 - [Installation](test.md)
-- [Reading Books](guide/reading.md)
+- [Reading Books](anothertest.md)
 - [Creating a Book](guide/creating.md)
 
 # Reference Guide
