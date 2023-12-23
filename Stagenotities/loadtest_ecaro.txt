@@ -1,6 +1,0 @@
-bash loadtestEcaro.sh 1 100 /mnt/VRZNDSYS/ecaro/noti/ 20230428 ECRQ_ACERTA
-bash loadtestEcaro.sh 101 250 /mnt/VRZNDSYS/ecaro/noti/ 20230428 ECRQ_ACERTA
-bash loadtestEcaro.sh 351 500 /mnt/VRZNDSYS/ecaro/noti/ 20230428 ECRQ_ACERTA
-bash loadtestEcaro.sh 851 1000 /mnt/VRZNDSYS/ecaro/noti/ 20230428 ECRQ_ACERTA
-
-curl http://dataexchanges-verzendsysteem-ecaro.acc.k8s.global.dns/ecaro/triggerRoute?id=noti-ecrq-prepare-transfer
